@@ -53,8 +53,8 @@ function Pagination() {
       </table>
       <div>
         <button onClick={prevPage} disabled={currentPage === 1}>Previous</button>
+        <div>{currentPage}</div>
         <button onClick={nextPage} disabled={currentPage === Math.ceil(employees.length / 10)}>Next</button>
-        <p>Page {currentPage}</p>
       </div>
     </div>
   );
